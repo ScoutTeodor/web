@@ -19,76 +19,168 @@
         </ul>
     </div>
 </header>
-<main>
 
-
-    <div class="sidebar-menu">
-        <div class="menu-heading uppercase">
-            Menu
-        </div>
-        <div class="menu-navigation">
-            <nav>
-                <ul>
-                    <li><a href="#description">Описание лабораторной</a></li>
-                    <li><a href="#algorithm">Порядок выполнения</a>
-                        <ol>
-                            <li><a href="#media-screen">@media screen</a>
-                            </li>
-                            <li><a href="#position-absolute">Закрепление элемента</a>
-                            </li>
-                            <li><a href="#table">Таблица</a>
-                            </li>
-                        </ol>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<div class="sidebar-menu">
+    <div class="menu-heading uppercase">
+        Menu
     </div>
-
-    <div class="main-content">
-
-        <h1>
-            Лабораторная 3
-        </h1>
-        <section>
-            <h2 id="description">
-                Описание лабораторной
-            </h2>
-            <p>
-                Произвести выравнивание всех ранее описанных элементов вашего сайта используя удобный для вас способ -
-                флексы или флоты либо применить 12-ти столбчатую вёрстку. Обязательное наличие горизонтальных и
-                вертикальных
-                рядов элементов. Если у вас до этого не было - всегда можно добавить – например, галерею с картинками.
-            </p>
-            <p> Также необходимо проработать то, как ваш макет будет выглядеть на различных мониторах (на маленьком
-                ноутбуке, полноценном Full HD, 2K монитор). Выбрать элементы, которые не будут отображаться на маленьких
-                мониторах, например, рекламный баннер во всю длину footer’a.
-            </p>
-        </section>
-        <section>
-            <h2 id="algorithm">
-                Порядок выполнения
-            </h2>
-            <ol>
-                <li id="media-screen"> Использовать css-правила @media screen для скрытия элементов не умещающихся в
-                    клиентскую область
+    <div class="menu-navigation">
+        <nav>
+            <ul>
+                <li><a href="#description">Описание лабораторной</a></li>
+                <li><a href="#algorithm">Порядок выполнения</a>
+                    <ol>
+                        <li><a href="#media-screen">@media screen</a>
+                        </li>
+                        <li><a href="#position-absolute">Закрепление элемента</a>
+                        </li>
+                        <li><a href="#table">Таблица</a>
+                        </li>
+                    </ol>
                 </li>
-                <li id="position-absolute">
-                    Закрепить элемент с помощью абсолютного позиционирования - например строку меню либо шапку или
-                    подвал
-                    сайта.
-                </li>
-                <li id="table">Добавить на страницу таблицу с заголовками и стилями для чётных и нечётных строк. В
-                    качестве типа
-                    отображения таблицы рекомендуется воспользоваться grid’ом, для достижения лучшей адаптивности. (т.е.
-                    необходимо добиться того, чтобы колонки таблицы изменяли свой размер в зависимости от размера окна)
-                    <br>Пример:
-                    <br>
-                    <img src="table-example.png" alt="Пример таблицы" width="400" height="211">
-            </ol>
-        </section>
+            </ul>
+        </nav>
     </div>
-</main>
+</div>
+
+<div class="main-content">
+
+    <h1>
+        Лабораторная 3
+    </h1>
+    <section>
+        <h2 id="description">
+            Описание лабораторной
+        </h2>
+        <p>
+            Произвести выравнивание всех ранее описанных элементов вашего сайта используя удобный для вас способ -
+            флексы или флоты либо применить 12-ти столбчатую вёрстку. Обязательное наличие горизонтальных и
+            вертикальных
+            рядов элементов. Если у вас до этого не было - всегда можно добавить – например, галерею с картинками.
+        </p>
+        <div id="gallery">
+            <div style="background-color:#A8C1ED;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Jean-Marc_Nattier%2C_Pierre_Ier_%281717%29_-002.jpg"
+                     alt="Petr"/>
+            </div>
+            <div style="background-color:#ED79B3;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Vladimir_Lenin.jpg" alt="Ilyich"/>
+            </div>
+            <div style="background-color:#EDCC85;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_%281840-1893%29.jpg"
+                     alt="Tschaikowski"/>
+            </div>
+        </div>
+        <p> Также необходимо проработать то, как ваш макет будет выглядеть на различных мониторах (на маленьком
+            ноутбуке, полноценном Full HD, 2K монитор). Выбрать элементы, которые не будут отображаться на маленьких
+            мониторах, например, рекламный баннер во всю длину footer’a.
+        </p>
+
+        <h2 id="algorithm">
+            Порядок выполнения
+        </h2>
+        <ol>
+            <li id="media-screen"> Использовать css-правила @media screen для скрытия элементов не умещающихся в
+                клиентскую область
+            </li>
+            <li id="position-absolute">
+                Закрепить элемент с помощью абсолютного позиционирования - например строку меню либо шапку или
+                подвал
+                сайта.
+            </li>
+            <li id="table">Добавить на страницу таблицу с заголовками и стилями для чётных и нечётных строк. В
+                качестве типа
+                отображения таблицы рекомендуется воспользоваться grid’ом, для достижения лучшей адаптивности. (т.е.
+                необходимо добиться того, чтобы колонки таблицы изменяли свой размер в зависимости от размера окна)
+                <br>Пример:
+                <br>
+                <img src="table-example.png" alt="Пример таблицы" width="400" height="211">
+            </li>
+            <li>
+                <table id="table-example">
+
+                    <caption>
+                        <span> Yearly Income Statements 2009 - 2012
+                        </span>
+                    </caption>
+                    <tr>
+                        <th>In Millions of USD (except for per share items</th>
+                        <th>52 weeks ending <br>
+                            <time datetime="2012-09-29">2012-09-29</time>
+                        </th>
+                        <th>52 weeks ending <br>
+                            <time datetime="2012-09-29">2012-09-29</time>
+                        </th>
+                        <th>52 weeks ending <br>
+                            <time datetime="2012-09-29">2012-09-29</time>
+                        </th>
+                        <th>52 weeks ending <br>
+                            <time datetime="2012-09-29">2012-09-29</time>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Revenue</th>
+                        <td>156,508.00</td>
+                        <td>108,24449.00</td>
+                        <td>655,225.00</td>
+                        <td>42,905.00</td>
+                    </tr>
+                    <tr>
+                        <th>Other Revenue, Total</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>Total Revenue</th>
+                        <td>156,508.00</td>
+                        <td>108,249.00</td>
+                        <td>655,225.00</td>
+                        <td>42,905.00</td>
+                    </tr>
+                    <tr>
+                        <th>Cost of Revenue, Total</th>
+                        <td>87,846.00</td>
+                        <td>64,31.00</td>
+                        <td>39,541.00</td>
+                        <td>25,683.00</td>
+                    </tr>
+                    <tr>
+                        <th>Gross Profit</th>
+                        <td>68,662.00</td>
+                        <td>43,818.00</td>
+                        <td>25,684.00</td>
+                        <td>17,222.00</td>
+                    </tr>
+                    <tr>
+                        <th>Selling/General/Admin.<br>
+                            Expenses, Total
+                        </th>
+                        <td>10,040.00</td>
+                        <td>7,599.00</td>
+                        <td>5,517.00</td>
+                        <td>4,149.00</td>
+                    </tr>
+                    <tr>
+                        <th>Research & Development</th>
+                        <td>3,381.00</td>
+                        <td>2,429.00</td>
+                        <td>1,782.00</td>
+                        <td>1,333.00</td>
+                    </tr>
+                    <tr>
+                        <th>Total Operating Expense</th>
+                        <td>101,267.00</td>
+                        <td>74,459.00</td>
+                        <td>46,840.00</td>
+                        <td>31,165.00</td>
+                    </tr>
+                </table>
+            </li>
+        </ol>
+    </section>
+</div>
 <footer>
     <hr>
     <a HREF="https://scoutteodor.github.io/web/">Github Pages

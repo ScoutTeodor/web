@@ -13,7 +13,6 @@ body {
     clear: both;
 }
 
-
 h1,
 h2,
 h3,
@@ -63,9 +62,45 @@ p {
     line-height: 150%;
 }
 
+table {
+    display: grid;
+    background: #b0c4de;
+    border-collapse: collapse;
+    border: 1px solid;
+    overflow-x: auto;
+}
+
+th, td {
+    width: content-box;
+    border: 1px solid;
+
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+caption {
+    color: #25457d
+}
+
+th {
+    background: #bcbcbc;
+    text-align: left;
+}
+
+tr:nth-child(odd) td {
+    background: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background: #dfe7f2;
+}
+
+td {
+    text-align: right;
+    border-color: #d6dde6;
+}
 
 img {
-
     float: contour;
     clear: left;
     margin: 5px;
@@ -92,6 +127,10 @@ a:hover {
 
 a:active {
     color: blue;
+}
+
+.site-menu ul {
+    list-style-type: none;
 }
 
 .main-content {
@@ -130,6 +169,22 @@ a:active {
     .sidebar-menu {
         display: none;
     }
+}
+
+#gallery {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery div {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery div img {
+    width: 50%;
 }
 
 .menu-heading {
